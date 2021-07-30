@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Café</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header class="header-nosotros">
+        <!-- Navegación -->
+
+        <div class="barra">
+
+            <!-- nav-toogle -->
+            <input type="checkbox" id="nav-toogle" class="nav-toogle">
+            <label for="nav-toogle" class="nav-toogle-label">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg></span>
+            </label>
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+            </a>
+            
+            <!-- NAVEGACION -->
+            <nav class="navegacion">
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div> <!--Cierra Barra-->
+
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Entrada de Blog</h3>
+
+        <img src="img/blog1.jpg" alt="imagen del blog">
+        <p>
+            Aliquam varius leo lorem, eu semper justo tristique ut. Morbi
+            fringilla tortor vel ipsum vulputate blandit. Duis accumsan mi orci,
+            at sollicitudin elit vestibulum nec. Proin sit amet viverra dui.
+            Praesent sit amet placerat ante. Cras lobortis lorem at tempus
+            sollicitudin. Duis eget gravida nulla. Vestibulum nisl turpis,
+            faucibus ut lectus vitae, imperdiet convallis libero. Donec sodales
+            ligula non augue pretium euismod. Phasellus condimentum feugiat
+            interdum. Donec ut imperdiet mauris. Sed tincidunt nibh dapibus
+            nulla efficitur posuere. Sed elementum velit ut nisi fermentum
+            scelerisque. Pellentesque vulputate odio in auctor eleifend. Nullam
+            vulputate lacus ac massa tempor dapibus a sit amet elit. 
+        </p>
+        <p>
+                Aenean ex metus, ultrices et nulla porttitor, bibendum tristique est.
+            Aliquam in lorem ultrices, sollicitudin lorem et, aliquam lorem.
+            Maecenas dolor quam, dignissim in pharetra id, ultrices sit amet sem.
+            Etiam eleifend, justo eget placerat tristique, arcu mi malesuada tortor,
+            vel ornare arcu est id ante. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+            potenti. Fusce dignissim felis sit amet ipsum ullamcorper, sed
+            consectetur justo iaculis. Maecenas et pulvinar nisi. Morbi sit amet
+            aliquet nulla. Fusce pretium nulla vel quam sodales rutrum. Aenean
+            gravida suscipit augue, a lobortis nisl hendrerit vitae. Nullam
+            convallis odio in cursus blandit. In rutrum, risus eget iaculis porta,
+            lacus enim convallis libero, at venenatis sapien ipsum vel nisi.
+            Curabitur sapien felis, lacinia a bibendum non, blandit vitae est.
+            Vivamus at pretium erat. Nulla lectus est, consequat mattis leo auctor,
+            semper consectetur metus.
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer"> <!--Fondo negro para footer-->
+            <div class="barra contenedor">
+                <a href="index.html" class="logo logo--footer">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__nombre--footer">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPT PARA NAV TOOGLE -->
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

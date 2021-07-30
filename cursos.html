@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Café</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header class="header-nosotros">
+        <!-- Navegación -->
+
+        <div class="barra">
+
+            <!-- nav-toogle -->
+            <input type="checkbox" id="nav-toogle" class="nav-toogle">
+            <label for="nav-toogle" class="nav-toogle-label">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg></span>
+            </label>
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+            </a>
+            
+            <!-- NAVEGACION -->
+            <nav class="navegacion">
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="cursos.html" class="navegacion__enlace navegacion__enlace--active">Cursos</a>
+                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div> <!--Cierra Barra-->
+
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuestros Próximos Cursos y Talleres</h3>
+            <!-- CURSOS -->
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso1.jpg" alt="Imagen del curso">
+            </div>
+           
+            <div class="curso__info">
+                <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Precio:</span> Gratis
+                </p>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Cupo:</span> 20
+                </p>
+                <p class="curso__descripcion">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi unde recusandae molestiae natus. Explicabo veniam
+                    dolore quos nesciunt, mollitia quaerat omnis repellat
+                    repellendus. Deserunt illo quo tenetur odit dicta aliquid?
+                </p>
+            </div> <!--curso__info-->
+        </div> <!--curso-->
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso2.jpg" alt="Imagen del curso">
+            </div>
+           
+            <div class="curso__info">
+                <h4 class="no-margin">Taller para Tostar y Moler Granos</h4>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Precio:</span> Gratis
+                </p>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Cupo:</span> 20
+                </p>
+                <p class="curso__descripcion">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi unde recusandae molestiae natus. Explicabo veniam
+                    dolore quos nesciunt, mollitia quaerat omnis repellat
+                    repellendus. Deserunt illo quo tenetur odit dicta aliquid?
+                </p>
+            </div> <!--curso__info-->
+        </div> <!--curso-->
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso3.jpg" alt="Imagen del curso">
+            </div>
+           
+            <div class="curso__info">
+                <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Precio:</span> Gratis
+                </p>
+                <p class="widget-curso__label">
+                    <span class="widget-curso__info">Cupo:</span> 20
+                </p>
+                <p class="curso__descripcion">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi unde recusandae molestiae natus. Explicabo veniam
+                    dolore quos nesciunt, mollitia quaerat omnis repellat
+                    repellendus. Deserunt illo quo tenetur odit dicta aliquid?
+                </p>
+            </div> <!--curso__info-->
+        </div> <!--curso-->
+
+    </main>
+
+    <footer>
+        <div class="footer"> <!--Fondo negro para footer-->
+            <div class="barra contenedor">
+                <a href="index.html" class="logo logo--footer">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__nombre--footer">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace navegacion__enlace--active">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPT PARA NAV TOOGLE -->
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
