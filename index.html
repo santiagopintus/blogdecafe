@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Se encarga de mostrar el contenido proporcionalmente-->
     <title>Blog de Café</title>
     <meta name="description" content="Página web de blog de café">
+    <meta name="author" content="Santiago Pintus">
     <!-- PREFETCH -->
-    <link rel="prefetch" href="nosotros.html"> 
+    <link rel="prefetch" href="pages/nosotros.html"> 
         <!--Acá cargamos la parte más
         visitada de la página, para que cargue más rápido cuando se visite
         (Conseguimos la info con Google Analitics)-->
- <!-- PRELOAD -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    
+    <!-- PRELOADS -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preload" href="img/blog1.jpg" as="image">
@@ -48,9 +51,9 @@
             
             <!-- NAVEGACION -->
             <nav class="navegacion">
-                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                <a href="pages/nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="pages/cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href="pages/contacto.html" class="navegacion__enlace">Contacto</a>
             </nav>
         </div> <!--Cierra Barra-->
 
@@ -80,7 +83,7 @@
                     voluptatem facilis natus quisquam hic qui suscipit facere
                     impedit sequi incidunt dicta accusamus ducimus iste
                     itaque.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="pages/entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
             <article class="entrada">
@@ -97,7 +100,7 @@
                     voluptatem facilis natus quisquam hic qui suscipit facere
                     impedit sequi incidunt dicta accusamus ducimus iste
                     itaque.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="pages/entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
             <article class="entrada">
@@ -114,7 +117,7 @@
                     voluptatem facilis natus quisquam hic qui suscipit facere
                     impedit sequi incidunt dicta accusamus ducimus iste
                     itaque.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="pages/entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
         </main>
@@ -131,7 +134,7 @@
                     <p class="widget-curso__label">
                         <span class="widget-curso__info">Cupo:</span> 20
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                    <a href="pages/entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
                 </li>
                 <li class="widget-curso">
                 <li class="widget-curso">
@@ -142,7 +145,7 @@
                     <p class="widget-curso__label">
                         <span class="widget-curso__info">Cupo:</span> 20
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                    <a href="pages/entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
                 </li>
             </ul>
 
@@ -158,9 +161,9 @@
 
                     
                 <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="pages/nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="pages/cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="pages/contacto.html" class="navegacion__enlace">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -168,7 +171,7 @@
 
     <!-- SCRIPT PARA NAV TOOGLE
     Y modernizr -->
-    
     <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

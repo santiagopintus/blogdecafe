@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Café</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
@@ -17,6 +17,7 @@
         <div class="barra">
 
             <!-- nav-toogle -->
+            <!-- Menú hamburguesa -->
             <input type="checkbox" id="nav-toogle" class="nav-toogle">
             <label for="nav-toogle" class="nav-toogle-label">
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,67 +29,76 @@
             </label>
 
             <!-- LOGO -->
-            <a href="index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
             </a>
             
             <!-- NAVEGACION -->
             <nav class="navegacion">
-                <a href="nosotros.html" class="navegacion__enlace navegacion__enlace--active">Nosotros</a>
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                 <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                <a href="contacto.html" class="navegacion__enlace navegacion__enlace--active" color>Contacto</a>
             </nav>
         </div> <!--Cierra Barra-->
 
     </header>
 
     <main class="contenedor">
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
+        <h3 class="centrar-texto">Contacto</h3>
 
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+        <div class="contacto-bg"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input 
+                    class="campo__field" 
+                    type="text" 
+                    id="nombre" 
+                    placeholder="Tu Nombre"
+                >
             </div>
-            <div class="sobre-nosotros__texto">
-
-                <p>Aliquam varius leo lorem, eu semper justo tristique ut. Morbi
-                fringilla tortor vel ipsum vulputate blandit. Duis accumsan mi
-                orci, at sollicitudin elit vestibulum nec. Proin sit amet
-                viverra dui. Praesent sit amet placerat ante. Cras lobortis
-                lorem at tempus sollicitudin. Duis eget gravida nulla.
-                Vestibulum nisl turpis, faucibus ut lectus vitae, imperdiet
-                convallis libero. Donec sodales ligula non augue pretium
-                euismod. Phasellus condimentum feugiat interdum. Donec ut
-                imperdiet mauris. Sed tincidunt nibh dapibus nulla efficitur
-                posuere.  </p>
-
-                <p>Sed elementum velit ut nisi fermentum scelerisque.
-                Pellentesque vulputate odio in auctor eleifend. Nullam vulputate
-                lacus ac massa tempor dapibus a sit amet elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Expedita dolore.</p>
-
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input 
+                    class="campo__field"
+                    type="email" 
+                    placeholder="Tu Email" 
+                    id="email"
+                >
             </div>
-
-        </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea 
+                name="" 
+                id="mensaje"
+                class="campo__field campo__field--textarea"
+                ></textarea>
+            </div>
+            <div class="campo campo--boton">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
     </main>
 
     <footer>
         <div class="footer"> <!--Fondo negro para footer-->
             <div class="barra contenedor">
-                <a href="index.html" class="logo logo--footer">
+                <a href="../index.html" class="logo logo--footer">
                     <h1 class="logo__nombre no-margin centrar-texto logo__nombre--footer">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
 
                     
                 <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace navegacion__enlace--active">Nosotros</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="contacto.html" class="navegacion__enlace navegacion__enlace--active">Contacto</a>
                 </nav>
             </div>
         </div>
     </footer>
     <!-- SCRIPT PARA NAV TOOGLE -->
-    <script src="js/modernizr.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
