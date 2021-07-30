@@ -130,7 +130,7 @@ img {
 
 }
 
-/*HEADER-----------------------------------------*//*HEADER-------------------------------------------*//*HEADER*/
+/*HEADER-----------------------------------------*//
 
 .header {
     height: 60rem;
@@ -138,13 +138,6 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/banner.webp);
-}
-.webp .header {
-    background-image: url(../img/banner.webp);
-}
-
-.no-webp .header {
-    background-image: url(../img/banner.jpg);
 }
 .header__texto {
     color: var(--blanco);
